@@ -4502,7 +4502,8 @@
             <property name="Fanart">$INFO[Window(Home).Property(NextAired.1.Art(fanart))]</property>
             <property name="NextTitle">$INFO[Window(Home).Property(NextAired.1.NextTitle)]</property>
             <property name="Status">$INFO[Window(Home).Property(NextAired.1.Status)]</property>
-            <thumb>$INFO[Window(Home).Property(NextAired.1.Art(poster))]</thumb>
+            <property name="StatusID">$INFO[Window(Home).Property(NextAired.1.StatusID)]</property>
+            <thumb>$INFO[Window(Home).Property(NextAired.1.Art(landscape))]</thumb>
             <onclick>SetFocus(5014)</onclick>
             <visible>Substring(Control.GetLabel(4321),nextaired) + !IsEmpty(Window(Home).Property(NextAired.1.Label))</visible>
         </item>
@@ -4523,7 +4524,8 @@
             <property name="Fanart">$INFO[Window(Home).Property(NextAired.2.Art(fanart))]</property>
             <property name="NextTitle">$INFO[Window(Home).Property(NextAired.2.NextTitle)]</property>
             <property name="Status">$INFO[Window(Home).Property(NextAired.2.Status)]</property>
-            <thumb>$INFO[Window(Home).Property(NextAired.2.Art(poster))]</thumb>
+            <property name="StatusID">$INFO[Window(Home).Property(NextAired.2.StatusID)]</property>
+            <thumb>$INFO[Window(Home).Property(NextAired.2.Art(landscape))]</thumb>
             <onclick>SetFocus(5014)</onclick>
             <visible>Substring(Control.GetLabel(4321),nextaired) + !IsEmpty(Window(Home).Property(NextAired.2.Label))</visible>
         </item>
@@ -4544,7 +4546,8 @@
             <property name="Fanart">$INFO[Window(Home).Property(NextAired.3.Art(fanart))]</property>
             <property name="NextTitle">$INFO[Window(Home).Property(NextAired.3.NextTitle)]</property>
             <property name="Status">$INFO[Window(Home).Property(NextAired.3.Status)]</property>
-            <thumb>$INFO[Window(Home).Property(NextAired.3.Art(poster))]</thumb>
+            <property name="StatusID">$INFO[Window(Home).Property(NextAired.3.StatusID)]</property>
+            <thumb>$INFO[Window(Home).Property(NextAired.3.Art(landscape))]</thumb>
             <onclick>SetFocus(5014)</onclick>
             <visible>Substring(Control.GetLabel(4321),nextaired) + !IsEmpty(Window(Home).Property(NextAired.3.Label))</visible>
         </item>
@@ -4567,7 +4570,8 @@
             <property name="Fanart">$INFO[Window(Home).Property(NextAired.4.Art(fanart))]</property>
             <property name="NextTitle">$INFO[Window(Home).Property(NextAired.4.NextTitle)]</property>
             <property name="Status">$INFO[Window(Home).Property(NextAired.4.Status)]</property>
-            <thumb>$INFO[Window(Home).Property(NextAired.4.Art(poster))]</thumb>
+            <property name="StatusID">$INFO[Window(Home).Property(NextAired.4.StatusID)]</property>
+            <thumb>$INFO[Window(Home).Property(NextAired.4.Art(landscape))]</thumb>
             <onclick>SetFocus(5014)</onclick>
             <visible>Substring(Control.GetLabel(4321),nextaired) + !IsEmpty(Window(Home).Property(NextAired.4.Label))</visible>
         </item>
@@ -4588,7 +4592,8 @@
             <property name="Fanart">$INFO[Window(Home).Property(NextAired.5.Art(fanart))]</property>
             <property name="NextTitle">$INFO[Window(Home).Property(NextAired.5.NextTitle)]</property>
             <property name="Status">$INFO[Window(Home).Property(NextAired.5.Status)]</property>
-            <thumb>$INFO[Window(Home).Property(NextAired.5.Art(poster))]</thumb>
+            <property name="StatusID">$INFO[Window(Home).Property(NextAired.5.StatusID)]</property>
+            <thumb>$INFO[Window(Home).Property(NextAired.5.Art(landscape))]</thumb>
             <onclick>SetFocus(5014)</onclick>
             <visible>Substring(Control.GetLabel(4321),nextaired) + !IsEmpty(Window(Home).Property(NextAired.5.Label))</visible>
         </item>
@@ -4609,7 +4614,8 @@
             <property name="Fanart">$INFO[Window(Home).Property(NextAired.6.Art(fanart))]</property>
             <property name="NextTitle">$INFO[Window(Home).Property(NextAired.6.NextTitle)]</property>
             <property name="Status">$INFO[Window(Home).Property(NextAired.6.Status)]</property>
-            <thumb>$INFO[Window(Home).Property(NextAired.6.Art(poster))]</thumb>
+            <property name="StatusID">$INFO[Window(Home).Property(NextAired.6.StatusID)]</property>
+            <thumb>$INFO[Window(Home).Property(NextAired.6.Art(landscape))]</thumb>
             <onclick>SetFocus(5014)</onclick>
             <visible>Substring(Control.GetLabel(4321),nextaired) + !IsEmpty(Window(Home).Property(NextAired.6.Label))</visible>
         </item>
@@ -4630,7 +4636,8 @@
             <property name="Fanart">$INFO[Window(Home).Property(NextAired.7.Art(fanart))]</property>
             <property name="NextTitle">$INFO[Window(Home).Property(NextAired.7.NextTitle)]</property>
             <property name="Status">$INFO[Window(Home).Property(NextAired.7.Status)]</property>
-            <thumb>$INFO[Window(Home).Property(NextAired.7.Art(poster))]</thumb>
+            <property name="StatusID">$INFO[Window(Home).Property(NextAired.7.StatusID)]</property>
+            <thumb>$INFO[Window(Home).Property(NextAired.7.Art(landscape))]</thumb>
             <onclick>SetFocus(5014)</onclick>
             <visible>Substring(Control.GetLabel(4321),nextaired) + !IsEmpty(Window(Home).Property(NextAired.7.Label))</visible>
         </item>
@@ -4651,7 +4658,8 @@
             <property name="Fanart">$INFO[Window(Home).Property(NextAired.8.Art(fanart))]</property>
             <property name="NextTitle">$INFO[Window(Home).Property(NextAired.8.NextTitle)]</property>
             <property name="Status">$INFO[Window(Home).Property(NextAired.8.Status)]</property>
-            <thumb>$INFO[Window(Home).Property(NextAired.8.Art(poster))]</thumb>
+            <property name="StatusID">$INFO[Window(Home).Property(NextAired.8.StatusID)]</property>
+            <thumb>$INFO[Window(Home).Property(NextAired.8.Art(landscape))]</thumb>
             <onclick>SetFocus(5014)</onclick>
             <visible>Substring(Control.GetLabel(4321),nextaired) + !IsEmpty(Window(Home).Property(NextAired.8.Label))</visible>
         </item>
@@ -4765,6 +4773,7 @@
             <label>$INFO[Window(Home).Property(RandomMovie.1.Title)]</label>
             <property name="Logo">$INFO[Window(Home).Property(RandomMovie.1.Art(clearlogo))]</property>
             <property name="Fanart">$INFO[Window(Home).Property(RandomMovie.1.Art(fanart))]</property>
+            <property name="Landscape">$INFO[Window(Home).Property(RandomMovie.1.Art(landscape))]</property>
             <property name="Year">$INFO[Window(Home).Property(RandomMovie.1.Year)]</property>
             <property name="NavItem">item1.png</property>
             <icon fallback="DefaultTVShows.png">$INFO[Window(Home).Property(RandomMovie.1.Art(fanart))]</icon>
@@ -4775,6 +4784,7 @@
             <label>$INFO[Window(Home).Property(RandomMovie.2.Title)]</label>
             <property name="Logo">$INFO[Window(Home).Property(RandomMovie.2.Art(clearlogo))]</property>
             <property name="Fanart">$INFO[Window(Home).Property(RandomMovie.2.Art(fanart))]</property>
+            <property name="Landscape">$INFO[Window(Home).Property(RandomMovie.2.Art(landscape))]</property>
             <property name="Year">$INFO[Window(Home).Property(RandomMovie.2.Year)]</property>
             <property name="NavItem">item2.png</property>
             <icon fallback="DefaultTVShows.png">$INFO[Window(Home).Property(RandomMovie.2.Art(fanart))]</icon>
@@ -4785,6 +4795,7 @@
             <label>$INFO[Window(Home).Property(RandomMovie.3.Title)]</label>
             <property name="Logo">$INFO[Window(Home).Property(RandomMovie.3.Art(clearlogo))]</property>
             <property name="Fanart">$INFO[Window(Home).Property(RandomMovie.3.Art(fanart))]</property>
+            <property name="Landscape">$INFO[Window(Home).Property(RandomMovie.3.Art(landscape))]</property>
             <property name="Year">$INFO[Window(Home).Property(RandomMovie.3.Year)]</property>
             <property name="NavItem">item3.png</property>
             <icon fallback="DefaultTVShows.png">$INFO[Window(Home).Property(RandomMovie.3.Art(fanart))]</icon>
@@ -4795,6 +4806,7 @@
             <label>$INFO[Window(Home).Property(RandomMovie.4.Title)]</label>
             <property name="Logo">$INFO[Window(Home).Property(RandomMovie.4.Art(clearlogo))]</property>
             <property name="Fanart">$INFO[Window(Home).Property(RandomMovie.4.Art(fanart))]</property>
+            <property name="Landscape">$INFO[Window(Home).Property(RandomMovie.4.Art(landscape))]</property>
             <property name="Year">$INFO[Window(Home).Property(RandomMovie.4.Year)]</property>
             <property name="NavItem">item4.png</property>
             <icon fallback="DefaultTVShows.png">$INFO[Window(Home).Property(RandomMovie.4.Art(fanart))]</icon>
@@ -4805,6 +4817,7 @@
             <label>$INFO[Window(Home).Property(RandomMovie.5.Title)]</label>
             <property name="Logo">$INFO[Window(Home).Property(RandomMovie.5.Art(clearlogo))]</property>
             <property name="Fanart">$INFO[Window(Home).Property(RandomMovie.5.Art(fanart))]</property>
+            <property name="Landscape">$INFO[Window(Home).Property(RandomMovie.5.Art(landscape))]</property>
             <property name="Year">$INFO[Window(Home).Property(RandomMovie.5.Year)]</property>
             <property name="NavItem">item5.png</property>
             <icon fallback="DefaultTVShows.png">$INFO[Window(Home).Property(RandomMovie.5.Art(fanart))]</icon>
@@ -4815,6 +4828,7 @@
             <label>$INFO[Window(Home).Property(RandomMovie.6.Title)]</label>
             <property name="Logo">$INFO[Window(Home).Property(RandomMovie.6.Art(clearlogo))]</property>
             <property name="Fanart">$INFO[Window(Home).Property(RandomMovie.6.Art(fanart))]</property>
+            <property name="Landscape">$INFO[Window(Home).Property(RandomMovie.6.Art(landscape))]</property>
             <property name="Year">$INFO[Window(Home).Property(RandomMovie.6.Year)]</property>
             <property name="NavItem">item6.png</property>
             <icon fallback="DefaultTVShows.png">$INFO[Window(Home).Property(RandomMovie.6.Art(fanart))]</icon>
@@ -4825,6 +4839,7 @@
             <label>$INFO[Window(Home).Property(RandomMovie.7.Title)]</label>
             <property name="Logo">$INFO[Window(Home).Property(RandomMovie.7.Art(clearlogo))]</property>
             <property name="Fanart">$INFO[Window(Home).Property(RandomMovie.7.Art(fanart))]</property>
+            <property name="Landscape">$INFO[Window(Home).Property(RandomMovie.7.Art(landscape))]</property>
             <property name="Year">$INFO[Window(Home).Property(RandomMovie.7.Year)]</property>
             <property name="NavItem">item7.png</property>
             <icon fallback="DefaultTVShows.png">$INFO[Window(Home).Property(RandomMovie.7.Art(fanart))]</icon>
@@ -4835,6 +4850,7 @@
             <label>$INFO[Window(Home).Property(RandomMovie.8.Title)]</label>
             <property name="Logo">$INFO[Window(Home).Property(RandomMovie.8.Art(clearlogo))]</property>
             <property name="Fanart">$INFO[Window(Home).Property(RandomMovie.8.Art(fanart))]</property>
+            <property name="Landscape">$INFO[Window(Home).Property(RandomMovie.8.Art(landscape))]</property>
             <property name="Year">$INFO[Window(Home).Property(RandomMovie.8.Year)]</property>
             <property name="NavItem">item8.png</property>
             <icon fallback="DefaultTVShows.png">$INFO[Window(Home).Property(RandomMovie.8.Art(fanart))]</icon>

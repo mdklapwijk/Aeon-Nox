@@ -631,7 +631,47 @@
             <include>QuickNavLabel</include>
             <control type="group">
                 <visible>Container.Content(movies)</visible>
-                <include>Media_Menu_NowPlaying</include>
+<!--                 <posx>20</posx>
+                <posy>720</posy> -->
+                <include condition="Window.IsActive(videos)">Media_Menu_NowPlaying</include>
+ <!--        <control type="image">
+            <width>369</width>
+            <height>204</height>
+            <texture background="true">$INFO[Window(Home).Property(RecommendedMovie.1.Art(landscape))]</texture>
+            <aspectratio align="center">scale</aspectratio>
+        </control>
+        <control type="group">
+        <visible>IsEmpty(Window(Home).Property(RecommendedMovie.1.Art(landscape)))</visible>
+        <control type="image">
+            <width>369</width>
+            <height>204</height>
+            <aspectratio align="center">scale</aspectratio>
+            <texture background="true" fallback="DefaultAddon.png">$INFO[Window(Home).Property(RecommendedMovie.1.Art(fanart))]</texture>
+        </control>
+        <control type="image">
+            <posx>20</posx>
+            <posy>20</posy>
+            <width>329</width>
+            <height>166</height>
+            <aspectratio align="center">keep</aspectratio>
+            <texture background="true">$INFO[Window(Home).Property(RecommendedMovie.1.Art(clearlogo))]</texture>
+        </control>
+        </control>
+        <control type="label">
+            <label>$INFO[Window(Home).Property(RecommendedMovie.1.Title)]</label>
+            <align>center</align>
+            <width>400</width>
+            <posy>190</posy>
+            <visible>IsEmpty(Window(Home).Property(RecommendedMovie.1.Art(clearlogo))) + IsEmpty(Window(Home).Property(RecommendedMovie.1.Art(landscape)))</visible>
+        </control>
+        <control type="image">
+            <posx>20</posx>
+            <posy>200</posy>
+            <width>60</width>
+            <height>60</height>
+            <aspectratio align="center">keep</aspectratio>
+            <texture background="true">dialogs/circle/$INFO[Window(Home).Property(RecommendedMovie.1.PercentPlayed)].png</texture>
+        </control> -->
             </control>
         </control>
         <control type="button" id="9000">
@@ -645,12 +685,6 @@
             <onfocus condition="!Skin.HasSetting(fstrailer)">PlayMedia($ESCINFO[ListItem.Trailer],1)</onfocus>
             <onfocus condition="Skin.HasSetting(fstrailer)">PlayMedia($ESCINFO[ListItem.Trailer])</onfocus>
             <onfocus>SetFocus(50)</onfocus>
-        </control>
-        <control type="button">
-            <include>HiddenObject</include>
-            <visible>!Skin.HasSetting(kioskmode)</visible>
-            <hitrect x="-50" y="0" w="50" h="1080" />
-            <onfocus>SetFocus(9000)</onfocus>
         </control>
         <control type="button">
             <include>HiddenObject</include>

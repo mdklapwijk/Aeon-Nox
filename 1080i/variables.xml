@@ -342,9 +342,7 @@
         <value condition="substring(VideoPlayer.mpaa,Brazil:18)">MPAA_Brazil_18</value>
     </variable>
     <variable name="AudioFlagVar">
-        <value condition="substring(ListItem.AudioCodec,ac3,left) + !Stringcompare(ListItem.AudioChannels,2)">dolbydigital</value>
-        <value condition="substring(ListItem.AudioCodec,ac3,left) + Stringcompare(ListItem.AudioChannels,2)">dolbypro</value>
-        <value>$INFO[ListItem.AudioCodec]</value>
+        <value>$INFO[ListItem.AudioCodec]$INFO[ListItem.AudioChannels]</value>
     </variable>
     <variable name="VideoInfoNextEpisodeVar">
         <value condition="!IsEmpty(Window(Home).Property(NextAired.Label)) + !IsEmpty(Window(Home).Property(NextAired.NextDate))">$INFO[Window(Home).Property(NextAired.NextSeasonNumber),S]$INFO[Window(Home).Property(NextAired.NextEpisodeNumber),E]$INFO[Window(Home).Property(NextAired.NextTitle),:  ]$INFO[Window(Home).Property(NextAired.NextDate), (,)]</value>    
@@ -367,7 +365,7 @@
         <value>$LOCALIZE[31397]</value>
     </variable>
     <variable name="InfoPanelVar">
-        <value condition="[Control.IsVisible(501) | Control.IsVisible(509)] + Skin.HasSetting(showcasezoom)">infopaneloff</value>
+        <value condition="[Control.IsVisible(501) + Skin.HasSetting(showcasezoom)] | [Control.IsVisible(509)+ Skin.HasSetting(showcasesquarezoom)]">infopaneloff</value>
         <value condition="Control.HasFocus(109)">infopaneloff</value>
         <value condition="Container.Content(tvshows)">$INFO[Skin.String(InfoPanelTVShows)]</value>
         <value condition="Container.Content(movies)">$INFO[Skin.String(InfoPanelMovies)]</value>
@@ -920,6 +918,7 @@
     </variable>
     <variable name="WidgetSubTitleVar">
         <value condition="!IsEmpty(ListItem.Property(Tagline))">$INFO[ListItem.Property(Tagline)]</value>
+        <value condition="!IsEmpty(ListItem.Property(NextTitle))">$INFO[ListItem.Property(EpisodeNumber),,:] $INFO[ListItem.Property(NextTitle)]</value>
         <value condition="!IsEmpty(ListItem.Property(EpisodeNumber))">$INFO[ListItem.Property(EpisodeNumber),,:] $INFO[ListItem.Label]</value>
     </variable>
     <variable name="WidgetTypeLabelVar">
@@ -1407,21 +1406,6 @@
         <value condition="Container.Content(genres)">$INFO[ListItem(6).Label,special://skin/extras/genre/music/icons/,.jpg]</value>
         <value condition="Container.Content(years)">$INFO[ListItem(6).Label,special://skin/extras/year/music/icons/,.jpg]</value>
         <value>$INFO[ListItem(6).Icon]</value>
-    </variable>
-    <variable name="MusicShowcaseItem7Var">
-        <value condition="Container.Content(genres)">$INFO[ListItem(7).Label,special://skin/extras/genre/music/icons/,.jpg]</value>
-        <value condition="Container.Content(years)">$INFO[ListItem(7).Label,special://skin/extras/year/music/icons/,.jpg]</value>
-        <value>$INFO[ListItem(7).Icon]</value>
-    </variable>
-    <variable name="MusicShowcaseItem8Var">
-        <value condition="Container.Content(genres)">$INFO[ListItem(8).Label,special://skin/extras/genre/music/icons/,.jpg]</value>
-        <value condition="Container.Content(years)">$INFO[ListItem(8).Label,special://skin/extras/year/music/icons/,.jpg]</value>
-        <value>$INFO[ListItem(8).Icon]</value>
-    </variable>
-    <variable name="MusicShowcaseItem9Var">
-        <value condition="Container.Content(genres)">$INFO[ListItem(9).Label,special://skin/extras/genre/music/icons/,.jpg]</value>
-        <value condition="Container.Content(years)">$INFO[ListItem(9).Label,special://skin/extras/year/music/icons/,.jpg]</value>
-        <value>$INFO[ListItem(9).Icon]</value>
     </variable>
     <!-- List -->
     <variable name="ListLabel1Var">
