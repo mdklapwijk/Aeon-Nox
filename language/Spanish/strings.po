@@ -84,6 +84,10 @@ msgctxt "#31019"
 msgid "Channel4 News"
 msgstr "Noticias Channel4"
 
+msgctxt "#31020"
+msgid "Extras"
+msgstr "Extras"
+
 msgctxt "#31021"
 msgid "Search XBMC for"
 msgstr "Buscar en XBMC"
@@ -431,6 +435,10 @@ msgstr "Add-on de letras"
 msgctxt "#31128"
 msgid "Lyrics"
 msgstr "Letras"
+
+msgctxt "#31129"
+msgid "Video Stream"
+msgstr "Secuencia de vídeo"
 
 msgctxt "#31130"
 msgid "Subtitle add-on"
@@ -1881,8 +1889,8 @@ msgid "10 Day"
 msgstr "10 Días"
 
 msgctxt "#31897"
-msgid "Press UP for extended info"
-msgstr "Pulse ARRIBA para más informacion"
+msgid "Press DOWN for extended info"
+msgstr "Presiona ABAJO para información ampliada"
 
 msgctxt "#31898"
 msgid "Visibility"

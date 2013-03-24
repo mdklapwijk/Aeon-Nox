@@ -7,7 +7,7 @@
         <height>84</height>
         <textoffsetx>30</textoffsetx>
         <align>left</align>
-        <texturefocus>views/tripanel/listselect_fo.png</texturefocus>
+        <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
         <texturenofocus>views/tripanel/listselect_fo.png</texturenofocus>
         <alttexturefocus>-</alttexturefocus>
         <alttexturenofocus>-</alttexturenofocus>
@@ -76,12 +76,13 @@
                     <colordiffuse>99FFFFFF</colordiffuse>
                 </control>
                 <control type="image">
-                    <posx>140</posx>
-                    <posy>847</posy>
+                    <posx>131</posx>
+                    <posy>864</posy>
                     <width>120</width>
-                    <height>100</height>
+                    <height>62</height>
                     <aspectratio>keep</aspectratio>
                     <texture>tvguide/$INFO[ListItem.Property(StatusID)].png</texture>
+                    <colordiffuse>floor</colordiffuse>
                 </control>
                 <control type="image">
                     <posx>20</posx>
@@ -89,6 +90,7 @@
                     <width>35</width>
                     <height>35</height>
                     <texture>tvguide/clock.png</texture>
+                    <colordiffuse>floor</colordiffuse>
                 </control>
                 <control type="label">
                     <posx>215</posx>
@@ -167,7 +169,6 @@
                 <aspectratio>keep</aspectratio>
                 <texture>$INFO[ListItem.Property(Art(characterart))]</texture>
                 <fadetime>IconCrossfadeTime2</fadetime>
-                <colordiffuse>floor</colordiffuse>
                 <animation effect="fade" time="200">VisibleChange</animation>
             </control>
             <control type="image">
@@ -184,7 +185,7 @@
         <control type="image">
             <width>435</width>
             <height>955</height>
-            <texture>views/tripanel/listselect_fo.png</texture>
+            <texture border="8">views/tripanel/listselect_fo.png</texture>
             <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
         </control>
         <include>NextAiredItemLayout</include>
@@ -242,7 +243,7 @@
         <width>172</width>
         <height>164</height>
         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-        <texture>views/tripanel/listselect_fo.png</texture>
+        <texture border="8">views/tripanel/listselect_fo.png</texture>
     </include>
     <include name="NextAired_Layout1">
         <control type="group">
@@ -2083,7 +2084,7 @@
                 <posy>-15</posy>
                 <include>Furniture_SettingsBackPanel2</include>
                 <control type="group" id="9001">
-                   <control type="list" id="200">
+                    <control type="list" id="200">
                         <include>NextAiredListVars</include>
                         <onup>SetFocus(206,0)</onup>
                         <onup>206</onup>

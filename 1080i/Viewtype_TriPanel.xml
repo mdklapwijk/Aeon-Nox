@@ -424,6 +424,7 @@
                     <ondown>52</ondown>
                     <viewtype label="31477">list</viewtype>
                     <preloaditems>2</preloaditems>
+                    <visible>![!IsEmpty(Skin.String((DisableTriPanelVL)) + Window.IsActive(videos)]</visible>
                     <scrolltime tween="sine">200</scrolltime>
                     <itemlayout condition="[Container.Content(tvshows) + Skin.HasSetting(tripanelbannertv)] | [Container.Content(movies) + Skin.HasSetting(tripanelbannermovies)]" height="147">
                         <control type="group">
@@ -571,7 +572,7 @@
                             <posx>120</posx>
                             <width>675</width>
                             <height>51</height>
-                            <label>$VAR[ListLabel1Var]</label>
+                            <label>$VAR[TriPanelLabel1Var]</label>
                             <font>Font_Reg19</font>
                             <textcolor>grey2</textcolor>
                         </control>
@@ -632,7 +633,7 @@
                             <posy>0</posy>
                             <width>842</width>
                             <height>51</height>
-                            <texture>views/tripanel/listselect_fo.png</texture>
+                            <texture border="8">views/tripanel/listselect_fo.png</texture>
                             <include>PanelGlowFade</include>
                             <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                             <animation effect="fade" start="100" end="25" tween="sine" easing="inout" time="240" condition="!Control.HasFocus(52)">Conditional</animation>
@@ -650,7 +651,7 @@
                             <posx>120</posx>
                             <width>675</width>
                             <height>51</height>
-                            <label>$VAR[ListLabel1Var]</label>
+                            <label>$VAR[TriPanelLabel1Var]</label>
                             <font>Font_Reg19</font>
                         </control>
                         <control type="label">
@@ -789,7 +790,7 @@
                             <posy>0</posy>
                             <width>842</width>
                             <height>96</height>
-                            <texture>views/tripanel/listselect_fo.png</texture>
+                            <texture border="8">views/tripanel/listselect_fo.png</texture>
                             <include>PanelGlowFade</include>
                             <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                             <animation effect="fade" start="100" end="25" tween="sine" easing="inout" time="240" condition="!Control.HasFocus(52)">Conditional</animation>

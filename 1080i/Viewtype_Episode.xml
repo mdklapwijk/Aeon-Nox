@@ -38,9 +38,10 @@
                 <preloaditems>2</preloaditems>
                 <pagecontrol>61</pagecontrol>
                 <visible>Container.Content(episodes) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Window.IsActive(musiclibrary)</visible>
+                <visible>![!IsEmpty(Skin.String((DisableEpisodeVL)) + Window.IsActive(videos)]</visible>
                 <animation effect="slide" end="-40,0" time="240" tween="cubic" easing="inout" condition="Control.HasFocus(61)">Conditional</animation>
                 <animation effect="slide" end="-40,0" time="240" tween="cubic" easing="inout" condition="Container.Content(episodes)">Conditional</animation>
-                <animation effect="slide" end="0,65" time="0" condition="Skin.HasSetting(ClassicTopBar) | Skin.HasSetting(altbreadcrumbstexture)">Conditional</animation>
+                <animation effect="slide" end="0,65" time="0" condition="!Skin.HasSetting(ClassicTopBar) + !Skin.HasSetting(disabletopbar)">Conditional</animation>
                 <animation effect="slide" end="0,15" time="160" condition="Container(514).Row(0)">Conditional</animation>
                 <animation effect="slide" end="0,8" time="160" condition="Container(514).Row(1)">Conditional</animation>
                 <animation effect="slide" end="0,0" time="160" condition="Container(514).Row(2)">Conditional</animation>
@@ -336,31 +337,31 @@
                     <texture background="true">$VAR[TVShowLogoVar]</texture>
                     <fadetime>400</fadetime>
                 </control>
-       <control type="group">
-            <visible>IsEmpty(ListItem.Art(clearlogo))</visible>
-            <control type="label">
-                <posx>1240</posx>
-                <posy>94</posy>
-                <width>870</width>
-                <align>right</align>
-                <label>$VAR[SecondLabelVar]</label>
-                <font>Font_Info_Caps</font>
-                <shadowcolor>floorshadow</shadowcolor>
-                <textcolor>white2</textcolor>
-            </control>
-            <control type="label">
-                <posx>1240</posx>
-                <posy>60</posy>
-                <width>870</width>
-                <align>right</align>
-                <label>$VAR[FirstLabelVar]</label>
-                <font>Font_MainClassic4</font>
-                <shadowcolor>floorshadow</shadowcolor>
-                <textcolor>white2</textcolor>
-                <scroll>true</scroll>
-                <scrollspeed>30</scrollspeed>
-            </control>
-        </control>
+                <control type="group">
+                    <visible>IsEmpty(ListItem.Art(clearlogo))</visible>
+                    <control type="label">
+                        <posx>1240</posx>
+                        <posy>94</posy>
+                        <width>870</width>
+                        <align>right</align>
+                        <label>$VAR[SecondLabelVar]</label>
+                        <font>Font_Info_Caps</font>
+                        <shadowcolor>floorshadow</shadowcolor>
+                        <textcolor>white2</textcolor>
+                    </control>
+                    <control type="label">
+                        <posx>1240</posx>
+                        <posy>60</posy>
+                        <width>870</width>
+                        <align>right</align>
+                        <label>$VAR[FirstLabelVar]</label>
+                        <font>Font_MainClassic4</font>
+                        <shadowcolor>floorshadow</shadowcolor>
+                        <textcolor>white2</textcolor>
+                        <scroll>true</scroll>
+                        <scrollspeed>30</scrollspeed>
+                    </control>
+                </control>
             </control>
         </itemlayout>
         <focusedlayout width="950" height="246" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">
@@ -435,7 +436,7 @@
                     <posx>99</posx>
                     <posy>114</posy>
                     <width>740</width>
-                    <height>137</height>
+                    <height>130</height>
                     <align>right</align>
                     <label>$VAR[GlobalPlotVar]</label>
                     <font>Font_Reg19</font>

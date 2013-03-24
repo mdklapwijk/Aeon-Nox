@@ -41,17 +41,17 @@
                 <height>1080</height>
                 <onup>7000</onup>
                 <ondown>7000</ondown>
+                    <onleft>ActivateWindow(1121)</onleft>
                 <control type="button" id="95">
                     <width>434</width>
                     <height>74</height>
                     <textoffsetx>20</textoffsetx>
                     <textoffsety>18</textoffsety>
-                    <texturefocus>views/tripanel/listselect_fo.png</texturefocus>
+                    <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <label>20037</label>
                     <font>Font_Bold20</font>
                     <textcolor>grey</textcolor>
-                    <onleft>ActivateWindow(1121)</onleft>
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                     <focusedcolor>white2</focusedcolor>
                 </control>
@@ -60,13 +60,12 @@
                     <height>74</height>
                     <textoffsetx>20</textoffsetx>
                     <textoffsety>18</textoffsety>
-                    <texturefocus>views/tripanel/listselect_fo.png</texturefocus>
+                    <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <label>13277</label>
                     <font>Font_Bold20</font>
                     <textcolor>grey</textcolor>
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-                    <onleft>ActivateWindow(1121)</onleft>
                     <focusedcolor>white2</focusedcolor>
                 </control>
                 <control type="button" id="96">
@@ -74,13 +73,12 @@
                     <height>74</height>
                     <textoffsetx>20</textoffsetx>
                     <textoffsety>18</textoffsety>
-                    <texturefocus>views/tripanel/listselect_fo.png</texturefocus>
+                    <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <label>13279</label>
                     <font>Font_Bold20</font>
                     <textcolor>grey</textcolor>
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-                    <onleft>ActivateWindow(1121)</onleft>
                     <focusedcolor>white2</focusedcolor>
                 </control>
                 <control type="button" id="97">
@@ -88,13 +86,12 @@
                     <height>74</height>
                     <textoffsetx>20</textoffsetx>
                     <textoffsety>18</textoffsety>
-                    <texturefocus>views/tripanel/listselect_fo.png</texturefocus>
+                    <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <label>13280</label>
                     <font>Font_Bold20</font>
                     <textcolor>grey</textcolor>
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
-                    <onleft>ActivateWindow(1121)</onleft>
                     <focusedcolor>white2</focusedcolor>
                 </control>
                 <control type="button" id="98">
@@ -102,12 +99,11 @@
                     <height>74</height>
                     <textoffsetx>20</textoffsetx>
                     <textoffsety>18</textoffsety>
-                    <texturefocus>views/tripanel/listselect_fo.png</texturefocus>
+                    <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <label>13281</label>
                     <font>Font_Bold20</font>
                     <textcolor>grey</textcolor>
-                    <onleft>ActivateWindow(1121)</onleft>
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                     <focusedcolor>white2</focusedcolor>
                 </control>
@@ -116,12 +112,11 @@
                     <height>74</height>
                     <textoffsetx>20</textoffsetx>
                     <textoffsety>18</textoffsety>
-                    <texturefocus>views/tripanel/listselect_fo.png</texturefocus>
+                    <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <label>19191</label>
                     <font>Font_Bold20</font>
                     <textcolor>grey</textcolor>
-                    <onleft>ActivateWindow(1121)</onleft>
                     <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                     <focusedcolor>white2</focusedcolor>
                 </control>

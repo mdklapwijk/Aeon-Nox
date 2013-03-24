@@ -84,6 +84,10 @@ msgctxt "#31019"
 msgid "Channel4 News"
 msgstr "Channel4 News"
 
+msgctxt "#31020"
+msgid "Extras"
+msgstr "Extras"
+
 msgctxt "#31021"
 msgid "Search XBMC for"
 msgstr "Durchsuche XBMC"
@@ -1881,8 +1885,8 @@ msgid "10 Day"
 msgstr "10 Tage"
 
 msgctxt "#31897"
-msgid "Press UP for extended info"
-msgstr "Drücke HOCH für mehr Infos"
+msgid "Press DOWN for extended info"
+msgstr "Drücke RUNTER für mehr Infos"
 
 msgctxt "#31898"
 msgid "Visibility"

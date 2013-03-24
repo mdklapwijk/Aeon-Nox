@@ -303,7 +303,6 @@
                     <bordersize>20</bordersize>
                 </control>
             </control>
-            <include condition="Window.IsActive(videos)">FloorFlagsList</include>
         </control>
         <control type="group">
             <posy>-20</posy>
@@ -457,8 +456,8 @@
                         <label>$VAR[ListLabel3Var]</label>
                         <font>Font_Info</font>
                         <textcolor>grey2</textcolor>
-                                                <animation effect="slide" end="26" time="0" condition="Container.Content(songs)">Conditional</animation>
-
+                        <animation effect="slide" end="26" time="0" condition="Container.Content(songs) + !IsEmpty(ListItem.DiscNumber)">Conditional</animation>
+                        <animation effect="slide" end="0,18" time="0" condition="Container.Content(seasons)">Conditional</animation>
                     </control>
                     <control type="label">
                         <posx>984</posx>
@@ -502,7 +501,7 @@
                         <posy>-1</posy>
                         <width>1118</width>
                         <height>100</height>
-                        <texture>views/tripanel/listselect_fo.png</texture>
+                        <texture border="8">views/tripanel/listselect_fo.png</texture>
                         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                         <animation effect="fade" start="100" end="25" tween="sine" easing="inout" time="240" condition="!Control.HasFocus(50)">Conditional</animation>
                     </control>
@@ -556,9 +555,8 @@
                         <align>center</align>
                         <label>$VAR[ListLabel3Var]</label>
                         <font>Font_Info</font>
-                        
-                        <animation effect="slide" end="26" time="0" condition="Container.Content(songs)">Conditional</animation>
-
+                        <animation effect="slide" end="26" time="0" condition="Container.Content(songs) + !IsEmpty(ListItem.DiscNumber)">Conditional</animation>
+                        <animation effect="slide" end="0,18" time="0" condition="Container.Content(seasons)">Conditional</animation>
                     </control>
                     <control type="label">
                         <posx>984</posx>
@@ -585,8 +583,7 @@
                         <height>45</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$VAR[WatchedIconVar]</texture>
-                                                <visible>!Container.Content(songs)</visible>
-
+                        <visible>!Container.Content(songs)</visible>
                     </control>
                 </focusedlayout>
                 <itemlayout height="100" condition="!Skin.HasSetting(slimlist)">
@@ -654,7 +651,7 @@
                         <posy>-1</posy>
                         <width>1118</width>
                         <height>100</height>
-                        <texture>views/tripanel/listselect_fo.png</texture>
+                        <texture border="8">views/tripanel/listselect_fo.png</texture>
                         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                         <animation effect="fade" start="100" end="25" tween="sine" easing="inout" time="240" condition="!Control.HasFocus(50)">Conditional</animation>
                     </control>
@@ -713,16 +710,16 @@
                         <width>898</width>
                         <height>60</height>
                         <font>Font_Reg19</font>
-                        <textcolor>grey2</textcolor>
-                        <info>ListItem.Label</info>
+                        <textcolor>white3</textcolor>
+                        <label>$VAR[SlimListLabel1Var]</label>
                     </control>
                     <control type="label">
                         <posx>1041</posx>
                         <width>898</width>
                         <height>60</height>
                         <align>right</align>
-                        <font>Font_Reg19</font>
-                        <textcolor>grey3</textcolor>
+                        <font>Font_Reg15</font>
+                        <textcolor>grey2</textcolor>
                         <label>$VAR[ListLabel2Var]</label>
                     </control>
                     <control type="image">
@@ -730,8 +727,8 @@
                         <posy>8</posy>
                         <width>45</width>
                         <height>45</height>
-                         <aspectratio>keep</aspectratio>
-                       <texture>$VAR[WatchedIconVar]</texture>
+                        <aspectratio>keep</aspectratio>
+                        <texture>$VAR[WatchedIconVar]</texture>
                         <colordiffuse>$VAR[ColorDiffuseVar]</colordiffuse>
                     </control>
                     <control type="image">
@@ -755,7 +752,7 @@
                         <posy>-1</posy>
                         <width>1116</width>
                         <height>61.5</height>
-                        <texture>views/tripanel/listselect_fo.png</texture>
+                        <texture border="8">views/tripanel/listselect_fo.png</texture>
                         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                         <animation effect="fade" start="100" end="25" tween="sine" easing="inout" time="240" condition="!Control.HasFocus(50)">Conditional</animation>
                     </control>
@@ -764,14 +761,14 @@
                         <width>898</width>
                         <height>60</height>
                         <font>Font_Reg19</font>
-                        <info>ListItem.Label</info>
+                        <label>$VAR[SlimListLabel1Var]</label>
                     </control>
                     <control type="label">
                         <posx>1041</posx>
                         <width>898</width>
                         <height>60</height>
                         <align>right</align>
-                        <font>Font_Reg19</font>
+                        <font>Font_Reg15</font>
                         <label>$VAR[ListLabel2Var]</label>
                     </control>
                     <control type="image">
