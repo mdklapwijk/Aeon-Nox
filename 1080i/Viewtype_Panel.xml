@@ -29,7 +29,6 @@
                 <texture>settings/settings_panelback2.png</texture>
                 <colordiffuse>$VAR[DialogColorVar]</colordiffuse>
             </control>
-            <include>BG_Effect_Settings_Panel</include>
             <control type="image">
                 <posx>34</posx>
                 <posy>34</posy>
@@ -39,8 +38,8 @@
                 <visible>![Skin.HasSetting(panelinfo) + Container.Content(movies)]</visible>
             </control>
             <control type="group">
-                    <posx>497</posx>
-                    <posy>84</posy>
+                <posx>497</posx>
+                <posy>84</posy>
                 <visible>![Skin.HasSetting(panelinfo) + Container.Content(movies)] | Player.HasVideo</visible>
                 <control type="image">
                     <width>1260</width>
@@ -49,44 +48,44 @@
                 </control>
                 <control type="group">
                     <visible>!Player.HasVideo</visible>
-                <control type="image">
+                    <control type="image">
+                        <width>1260</width>
+                        <height>673</height>
+                        <aspectratio aligny="top">scale</aspectratio>
+                        <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+                        <fadetime>600</fadetime>
+                    </control>
+                    <control type="image">
+                        <width>1260</width>
+                        <height>673</height>
+                        <aspectratio>keep</aspectratio>
+                        <texture background="true">$INFO[ListItem.Icon]</texture>
+                        <visible>IsEmpty(ListItem.Art(fanart))</visible>
+                        <fadetime>600</fadetime>
+                    </control>
+                    <control type="image">
+                        <posx>1141</posx>
+                        <posy>1</posy>
+                        <width>120</width>
+                        <height>120</height>
+                        <fadetime>IconCrossfadeTime2</fadetime>
+                        <include>OverlayVisibility0</include>
+                        <include>Animation_VisibleChange200</include>
+                    </control>
+                </control>
+                <control type="videowindow">
+                    <posy>84</posy>
                     <width>1260</width>
-                    <height>673</height>
-                    <aspectratio aligny="top">scale</aspectratio>
-                    <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
-                    <fadetime>600</fadetime>
+                    <height>589</height>
+                    <visible>Player.HasVideo</visible>
                 </control>
-                <control type="image">
-                    <width>1260</width>
-                    <height>673</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture background="true">$INFO[ListItem.Icon]</texture>
-                    <visible>IsEmpty(ListItem.Art(fanart))</visible>
-                    <fadetime>600</fadetime>
-                </control>
-               <control type="image">
-                    <posx>1141</posx>
-                    <posy>1</posy>
-                    <width>120</width>
-                    <height>120</height>
-                    <fadetime>IconCrossfadeTime2</fadetime>
-                    <include>OverlayVisibility0</include>
-                    <include>Animation_VisibleChange200</include>
-                </control>
-                </control>
-            <control type="videowindow">
-                <posy>84</posy>
-                <width>1260</width>
-                <height>589</height>
-                <visible>Player.HasVideo</visible>
-            </control>
                 <control type="textbox">
                     <posx>30</posx>
                     <posy>686</posy>
                     <width>1200</width>
                     <height>164</height>
                     <label>$VAR[GlobalPlotOutlineVar]</label>
-                    <font>Font_Reg20</font>
+                    <font>Font_Reg32</font>
                     <autoscroll delay="8000" time="AutoScrollTime" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
                 </control>
             </control>
@@ -146,7 +145,7 @@
                             <width min="50" max="800">auto</width>
                             <aligny>bottom</aligny>
                             <label>$INFO[ListItem.Tagline]</label>
-                            <font>Font_Reg18</font>
+                            <font>Font_Reg29</font>
                             <textcolor>white6</textcolor>
                             <scroll>true</scroll>
                         </control>
@@ -160,14 +159,14 @@
                             <width min="50" max="400">auto</width>
                             <aligny>bottom</aligny>
                             <label>$LOCALIZE[515]:</label>
-                            <font>Font_Reg20</font>
+                            <font>Font_Reg32</font>
                             <textcolor>$VAR[SubTitleColorVar]</textcolor>
                         </control>
                         <control type="label">
                             <width min="50" max="720">auto</width>
                             <aligny>bottom</aligny>
                             <label fallback="N/A">$INFO[ListItem.Genre]</label>
-                            <font>Font_Reg20</font>
+                            <font>Font_Reg32</font>
                             <textcolor>white6</textcolor>
                             <scroll>true</scroll>
                         </control>
@@ -181,14 +180,14 @@
                             <width min="50" max="400">auto</width>
                             <aligny>bottom</aligny>
                             <label>$LOCALIZE[20339]:</label>
-                            <font>Font_Reg20</font>
+                            <font>Font_Reg32</font>
                             <textcolor>$VAR[SubTitleColorVar]</textcolor>
                         </control>
                         <control type="label">
                             <width min="50" max="720">auto</width>
                             <aligny>bottom</aligny>
                             <label fallback="N/A">$INFO[ListItem.Director]</label>
-                            <font>Font_Reg20</font>
+                            <font>Font_Reg32</font>
                             <textcolor>white6</textcolor>
                             <scroll>true</scroll>
                         </control>
@@ -202,14 +201,14 @@
                             <width min="50" max="400">auto</width>
                             <aligny>bottom</aligny>
                             <label>$LOCALIZE[20417]:</label>
-                            <font>Font_Reg20</font>
+                            <font>Font_Reg32</font>
                             <textcolor>$VAR[SubTitleColorVar]</textcolor>
                         </control>
                         <control type="label">
                             <width min="50" max="720">auto</width>
                             <aligny>bottom</aligny>
                             <label fallback="N/A">$INFO[ListItem.Writer]</label>
-                            <font>Font_Reg20</font>
+                            <font>Font_Reg32</font>
                             <textcolor>white6</textcolor>
                             <scroll>true</scroll>
                         </control>
@@ -223,14 +222,14 @@
                             <width min="50" max="400">auto</width>
                             <aligny>bottom</aligny>
                             <label>$LOCALIZE[563]:</label>
-                            <font>Font_Reg20</font>
+                            <font>Font_Reg32</font>
                             <textcolor>$VAR[SubTitleColorVar]</textcolor>
                         </control>
                         <control type="label">
                             <width min="50" max="720">auto</width>
                             <aligny>bottom</aligny>
                             <label fallback="N/A">$INFO[ListItem.Rating]</label>
-                            <font>Font_Reg20</font>
+                            <font>Font_Reg32</font>
                             <textcolor>white6</textcolor>
                             <scroll>true</scroll>
                         </control>
@@ -244,14 +243,14 @@
                             <width min="50" max="400">auto</width>
                             <aligny>bottom</aligny>
                             <label>$LOCALIZE[345]:</label>
-                            <font>Font_Reg20</font>
+                            <font>Font_Reg32</font>
                             <textcolor>$VAR[SubTitleColorVar]</textcolor>
                         </control>
                         <control type="label">
                             <width min="50" max="720">auto</width>
                             <aligny>bottom</aligny>
                             <label fallback="N/A">$INFO[ListItem.Year]</label>
-                            <font>Font_Reg20</font>
+                            <font>Font_Reg32</font>
                             <textcolor>white6</textcolor>
                             <scroll>true</scroll>
                         </control>
@@ -265,14 +264,14 @@
                             <width min="50" max="400">auto</width>
                             <aligny>bottom</aligny>
                             <label>$LOCALIZE[2050]:</label>
-                            <font>Font_Reg20</font>
+                            <font>Font_Reg32</font>
                             <textcolor>$VAR[SubTitleColorVar]</textcolor>
                         </control>
                         <control type="label">
                             <width min="50" max="720">auto</width>
                             <aligny>bottom</aligny>
                             <label fallback="N/A">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
-                            <font>Font_Reg20</font>
+                            <font>Font_Reg32</font>
                             <textcolor>white6</textcolor>
                             <scroll>true</scroll>
                         </control>
@@ -286,14 +285,14 @@
                             <width min="50" max="400">auto</width>
                             <aligny>bottom</aligny>
                             <label>$LOCALIZE[572]:</label>
-                            <font>Font_Reg20</font>
+                            <font>Font_Reg32</font>
                             <textcolor>$VAR[SubTitleColorVar]</textcolor>
                         </control>
                         <control type="label">
                             <width min="50" max="720">auto</width>
                             <aligny>bottom</aligny>
                             <label fallback="N/A">$INFO[ListItem.Studio]</label>
-                            <font>Font_Reg20</font>
+                            <font>Font_Reg32</font>
                             <textcolor>white6</textcolor>
                             <scroll>true</scroll>
                         </control>
@@ -307,14 +306,14 @@
                             <width min="50" max="400">auto</width>
                             <aligny>bottom</aligny>
                             <label>$LOCALIZE[20074]:</label>
-                            <font>Font_Reg20</font>
+                            <font>Font_Reg32</font>
                             <textcolor>$VAR[SubTitleColorVar]</textcolor>
                         </control>
                         <control type="label">
                             <width>600</width>
                             <aligny>bottom</aligny>
                             <label fallback="N/A">$INFO[ListItem.Mpaa]</label>
-                            <font>Font_Reg20</font>
+                            <font>Font_Reg32</font>
                             <textcolor>white6</textcolor>
                             <scroll>true</scroll>
                             <wrapmultiline>true</wrapmultiline>
@@ -338,7 +337,7 @@
                     <width>1200</width>
                     <height>228</height>
                     <label>$VAR[GlobalPlotVar]</label>
-                    <font>Font_Reg20</font>
+                    <font>Font_Reg32</font>
                     <autoscroll delay="8000" time="AutoScrollTime" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
                 </control>
             </control>
@@ -361,7 +360,7 @@
                         <width>365</width>
                         <height>73</height>
                         <label>$VAR[FirstLabelVar]</label>
-                        <font>Font_Bold18_Caps</font>
+                        <font>Font_Bold30_Caps</font>
                     </control>
                     <control type="label">
                         <posx>20</posx>
@@ -369,7 +368,7 @@
                         <width>398</width>
                         <height>73</height>
                         <label>$VAR[SecondLabelVar]</label>
-                        <font>Font_Reg12</font>
+                        <font>Font_Reg22</font>
                     </control>
                     <control type="image">
                         <posx>386</posx>
@@ -394,7 +393,7 @@
                         <width>365</width>
                         <height>73</height>
                         <label>$VAR[FirstLabelVar]</label>
-                        <font>Font_Bold18_Caps</font>
+                        <font>Font_Bold30_Caps</font>
                     </control>
                     <control type="label">
                         <posx>20</posx>
@@ -402,7 +401,7 @@
                         <width>398</width>
                         <height>73</height>
                         <label>$VAR[SecondLabelVar]</label>
-                        <font>Font_Reg12</font>
+                        <font>Font_Reg22</font>
                     </control>
                     <control type="image">
                         <posx>386</posx>
@@ -465,7 +464,7 @@
                 <width>420</width>
                 <align>center</align>
                 <label>$VAR[SecondLabelVar]</label>
-                <font>Font_Info_Caps</font>
+                <font>Font_Reg28_Caps</font>
                 <textcolor>white2</textcolor>
             </control>
             <control type="label">

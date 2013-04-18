@@ -8,7 +8,6 @@
     </coordinates>
     <include>Animation_DialogPopup</include>
     <include>Animation_DialogZoom</include>
-    <include condition="Skin.HasSetting(effect_bg)">BG_Effect_Home</include>
     <controls>
         <control type="image">
             <width>1350</width>
@@ -38,7 +37,7 @@
             <height>105</height>
             <align>center</align>
             <label>19142</label>
-            <font>Font_Reg24</font>
+            <font>Font_Reg40</font>
             <visible>!pvr.IsPlayingRadio</visible>
         </control>
         <control type="label">

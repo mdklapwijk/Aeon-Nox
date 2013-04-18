@@ -51,7 +51,7 @@
                         <height>60</height>
                         <textoffsetx>10</textoffsetx>
                         <label>$INFO[ListItem.Label]</label>
-                        <font>Font_Reg19</font>
+                        <font>Font_Reg30_2</font>
                         <textcolor>grey2</textcolor>
                     </control>
                 </itemlayout>
@@ -69,7 +69,7 @@
                             <height>60</height>
                             <textoffsetx>10</textoffsetx>
                             <label>$INFO[ListItem.Label]</label>
-                            <font>Font_Reg19</font>
+                            <font>Font_Reg30_2</font>
                             <scroll>true</scroll>
                         </control>
                     </control>
@@ -85,7 +85,7 @@
                             <width>300</width>
                             <textoffsetx>10</textoffsetx>
                             <label>$INFO[ListItem.Label]</label>
-                            <font>Font_Reg19</font>
+                            <font>Font_Reg30_2</font>
                             <textcolor>grey2</textcolor>
                         </control>
                     </control>
@@ -139,6 +139,12 @@
                         <onclick>Skin.SetString(ItemToEdit.MultiFanart,thebigpicture)</onclick>
                         <onclick>Dialog.Close(1134)</onclick>
                         <visible>System.HasAddon(service.skin.widgets_bigpictures)</visible>
+                    </item>
+                    <item>
+                        <label>Flickr</label>
+                        <onclick>Skin.SetString(ItemToEdit.MultiFanart,randomflickr)</onclick>
+                        <onclick>Dialog.Close(1134)</onclick>
+                        <visible>System.HasAddon(script.extendedinfo)</visible>
                     </item>
                     <item>
                         <label>$LOCALIZE[31323]</label>

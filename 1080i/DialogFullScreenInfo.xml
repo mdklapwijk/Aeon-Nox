@@ -38,7 +38,7 @@
                     <height>42</height>
                     <align>center</align>
                     <label>$VAR[VideoPlayerSeekVar]</label>
-                    <font>Font_Reg19_Caps</font>
+                    <font>Font_Reg33_Caps</font>
                     <shadowcolor>88e5e5e5</shadowcolor>
                     <textcolor>FF363636</textcolor>
                 </control>
@@ -73,7 +73,7 @@
                 <align>center</align>
                 <aligny>top</aligny>
                 <label>$VAR[VideoPlayerSubTitleVar]</label>
-                <font>Font_Reg19</font>
+                <font>Font_Reg30_2</font>
                 <textcolor>$VAR[SubTitleColorVar]</textcolor>
                 <scroll>true</scroll>
             </control>
@@ -103,9 +103,8 @@
                         <height>70</height>
                         <align>center</align>
                         <label>$INFO[VideoPlayer.Studio]</label>
-                        <font>Font_Reg14_Caps</font>
+                        <font>Font_Reg22_Caps</font>
                         <textcolor>grey</textcolor>
-                        <textcolor>BBa4a4a4</textcolor>
                         <wrapmultiline>true</wrapmultiline>
                         <visible>IsEmpty(Control.GetLabel(76))</visible>
                     </control>
@@ -218,7 +217,7 @@
                         <width>1018</width>
                         <height>50</height>
                         <label>$INFO[VideoPlayer.Title]</label>
-                        <font>Font_Reg38_Caps</font>
+                        <font>Font_Reg57_Caps</font>
                         <animation effect="slide" start="0,0" end="0,30" time="0" condition="[VideoPlayer.Content(movies) + IsEmpty(VideoPlayer.TagLine)] | VideoPlayer.Content(tvshows)">Conditional</animation>
                         <visible>!Control.IsVisible(8822)</visible>
                         <scroll>true</scroll>
@@ -249,7 +248,7 @@
                             <width>995</width>
                             <height>40</height>
                             <label>$INFO[VideoPlayer.Tagline]</label>
-                            <font>Font_Reg20</font>
+                            <font>Font_Reg32</font>
                             <textcolor>grey</textcolor>
                             <scroll>true</scroll>
                         </control>
@@ -259,7 +258,7 @@
                         <height>40</height>
                         <aligny>bottom</aligny>
                         <label>$INFO[VideoPlayer.Artist]</label>
-                        <font>Font_Reg20</font>
+                        <font>Font_Reg32</font>
                         <textcolor>grey</textcolor>
                         <scroll>true</scroll>
                         <visible>VideoPlayer.Content(musicvideos) + !IsEmpty(VideoPlayer.Artist)</visible>
@@ -269,7 +268,7 @@
                         <height>40</height>
                         <aligny>bottom</aligny>
                         <label>$INFO[VideoPlayer.TvShowTitle]</label>
-                        <font>Font_Reg20</font>
+                        <font>Font_Reg32</font>
                         <textcolor>grey</textcolor>
                         <visible>VideoPlayer.Content(episodes) + !IsEmpty(VideoPlayer.TvShowTitle)</visible>
                     </control>
@@ -295,7 +294,7 @@
                         <height>60</height>
                         <align>center</align>
                         <label fallback="-">$INFO[VideoPlayer.Year]</label>
-                        <font>Font_Bold25</font>
+                        <font>Font_Bold42</font>
                         <textcolor>grey</textcolor>
                     </control>
                     <control type="label">
@@ -305,7 +304,7 @@
                         <height>30</height>
                         <align>center</align>
                         <label>$LOCALIZE[345]</label>
-                        <font>Font_Reg10_Caps</font>
+                        <font>Font_Reg19_Caps</font>
                         <textcolor>grey</textcolor>
                     </control>
                 </control>
@@ -318,7 +317,7 @@
                         <height>85</height>
                         <align>left</align>
                         <label fallback="-">$VAR[VideoSeasonVar,S]   -   $VAR[VideoEpisodeVar,E]</label>
-                        <font>Font_Bold28</font>
+                        <font>Font_Bold46</font>
                         <textcolor>grey</textcolor>
                     </control>
                     <control type="image">
@@ -343,7 +342,7 @@
                         <height>60</height>
                         <align>center</align>
                         <label>$INFO[Player.Time]</label>
-                        <font>Font_Bold20</font>
+                        <font>Font_Bold34</font>
                         <textcolor>grey</textcolor>
                     </control>
                     <control type="label">
@@ -354,7 +353,7 @@
                         <align>center</align>
                         <label>$INFO[Player.Duration]</label>
                         <label>$LOCALIZE[12391]</label>
-                        <font>Font_Reg10_Caps</font>
+                        <font>Font_Reg19_Caps</font>
                         <textcolor>grey</textcolor>
                         <visible>!Skin.HasSetting(PreferRemaining)</visible>
                     </control>
@@ -365,7 +364,7 @@
                         <height>30</height>
                         <align>center</align>
                         <label>$INFO[Player.TimeRemaining,- ]</label>
-                        <font>Font_Reg10_Caps</font>
+                        <font>Font_Reg19_Caps</font>
                         <textcolor>grey</textcolor>
                         <visible>Skin.HasSetting(PreferRemaining)</visible>
                     </control>
@@ -390,9 +389,8 @@
                         <width>135</width>
                         <height>38</height>
                         <label fallback="?">$INFO[VideoPlayer.Rating]</label>
-                        <font>Font_Bold25</font>
+                        <font>Font_Bold42</font>
                         <textcolor>grey</textcolor>
-                        <textcolor>BBa4a4a4</textcolor>
                     </control>
                     <control type="image">
                         <posx>287</posx>
@@ -417,9 +415,8 @@
                         <height>74</height>
                         <align>center</align>
                         <label>$INFO[VideoPlayer.Studio]</label>
-                        <font>Font_Reg14_Caps</font>
+                        <font>Font_Reg22_Caps</font>
                         <textcolor>grey</textcolor>
-                        <textcolor>BBa4a4a4</textcolor>
                         <wrapmultiline>true</wrapmultiline>
                         <visible>IsEmpty(Control.GetLabel(800011))</visible>
                     </control>
@@ -434,7 +431,7 @@
                         <width>165</width>
                         <height>44</height>
                         <label>$LOCALIZE[515]:</label>
-                        <font>Font_Reg32</font>
+                        <font>Font_Reg30</font>
                         <textcolor>grey</textcolor>
                     </control>
                     <control type="label">
@@ -443,7 +440,7 @@
                         <width>840</width>
                         <height>44</height>
                         <label fallback="31006">$INFO[VideoPlayer.Genre]</label>
-                        <font>Font_Reg32</font>
+                        <font>Font_Reg30</font>
                         <scroll>true</scroll>
                     </control>
                 </control>
@@ -456,7 +453,7 @@
                         <width>165</width>
                         <height>44</height>
                         <label>$LOCALIZE[31005]:</label>
-                        <font>Font_Reg32</font>
+                        <font>Font_Reg30</font>
                         <textcolor>grey</textcolor>
                     </control>
                     <control type="label">
@@ -465,7 +462,7 @@
                         <width>840</width>
                         <height>44</height>
                         <label fallback="31006">$INFO[VideoPlayer.Premiered]</label>
-                        <font>Font_Reg32</font>
+                        <font>Font_Reg30</font>
                         <scroll>true</scroll>
                     </control>
                 </control>
@@ -479,7 +476,7 @@
                         <width>165</width>
                         <height>44</height>
                         <label>$LOCALIZE[20339]:</label>
-                        <font>Font_Reg32</font>
+                        <font>Font_Reg30</font>
                         <textcolor>grey</textcolor>
                     </control>
                     <control type="label">
@@ -488,7 +485,7 @@
                         <width>840</width>
                         <height>44</height>
                         <label fallback="31006">$INFO[VideoPlayer.Director]</label>
-                        <font>Font_Reg32</font>
+                        <font>Font_Reg30</font>
                         <scroll>true</scroll>
                     </control>
                 </control>
@@ -502,7 +499,7 @@
                         <width>165</width>
                         <height>44</height>
                         <label>$LOCALIZE[20417]:</label>
-                        <font>Font_Reg32</font>
+                        <font>Font_Reg30</font>
                         <textcolor>grey</textcolor>
                     </control>
                     <control type="label">
@@ -511,7 +508,7 @@
                         <width>840</width>
                         <height>44</height>
                         <label fallback="31006">$INFO[VideoPlayer.Writer]</label>
-                        <font>Font_Reg32</font>
+                        <font>Font_Reg30</font>
                     </control>
                 </control>
                 <control type="textbox">
@@ -521,7 +518,7 @@
                     <height>180</height>
                     <align>left</align>
                     <label fallback="31006">$INFO[VideoPlayer.CastAndRole]</label>
-                    <font>Font_Reg32</font>
+                    <font>Font_Reg30</font>
                     <autoscroll delay="5000" time="AutoScrollTime" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
                 </control>
                 <control type="textbox">
@@ -531,7 +528,7 @@
                     <height>320</height>
                     <align>left</align>
                     <label fallback="31006">$INFO[VideoPlayer.Plot]</label>
-                    <font>Font_Reg32</font>
+                    <font>Font_Reg30</font>
                     <pagecontrol>60</pagecontrol>
                     <autoscroll delay="15000" time="AutoScrollTime" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
                     <visible>!Control.IsVisible(50)</visible>
@@ -626,7 +623,7 @@
                 <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
                 <texturenofocus>dialogs/context_nofocus.png</texturenofocus>
                 <label>$LOCALIZE[31064]</label>
-                <font>Font_Reg19</font>
+                <font>Font_Reg30_2</font>
                 <textcolor>grey</textcolor>
                 <focusedcolor>white2</focusedcolor>
                 <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
@@ -655,7 +652,7 @@
                 <texture background="true">$INFO[Player.Art(discart)]</texture>
                 <include>Animation_VisibleChange200</include>
                 <animation type="WindowOpen">
-                    <effect type="rotate" end="-360" center="auto" time="6400" delay="1600" reversible="false" tween="cubic" easing="inout" />
+                    <effect type="rotate" end="-360" center="auto" time="6400" delay="1600" tween="cubic" easing="inout" />
                     <effect type="slide" start="150" end="0" delay="640" time="320" tween="cubic" />
                 </animation>
             </control>
@@ -716,7 +713,7 @@
                         <posy>15</posy>
                         <width>1320</width>
                         <label>$INFO[VideoPlayer.Title]</label>
-                        <font>Font_Reg38_Caps</font>
+                        <font>Font_Reg57_Caps</font>
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
@@ -724,7 +721,7 @@
                         <width>1000</width>
                         <height>85</height>
                         <label fallback="31006">$INFO[VideoPlayer.Genre]</label>
-                        <font>Font_Reg20_Caps</font>
+                        <font>Font_Reg34_Caps</font>
                         <textcolor>grey</textcolor>
                     </control>
                     <control type="label">
@@ -733,7 +730,7 @@
                         <width>750</width>
                         <height>44</height>
                         <label>$INFO[VideoPlayer.StartTime,, - ]$INFO[VideoPlayer.FinishTime]</label>
-                        <font>Font_Reg32</font>
+                        <font>Font_Reg30</font>
                     </control>
                     <control type="label">
                         <posx>4</posx>
@@ -741,7 +738,7 @@
                         <width>165</width>
                         <height>44</height>
                         <label>$LOCALIZE[2050]:</label>
-                        <font>Font_Reg32</font>
+                        <font>Font_Reg30</font>
                         <textcolor>grey</textcolor>
                     </control>
                     <control type="label">
@@ -750,7 +747,7 @@
                         <width>750</width>
                         <height>44</height>
                         <label>$INFO[VideoPlayer.Time,, / ]$INFO[VideoPlayer.Duration]</label>
-                        <font>Font_Reg32</font>
+                        <font>Font_Reg30</font>
                         <visible>!Skin.HasSetting(PreferRemaining)</visible>
                     </control>
                     <control type="label">
@@ -759,7 +756,7 @@
                         <width>165</width>
                         <height>44</height>
                         <label>$LOCALIZE[19031]:</label>
-                        <font>Font_Reg32</font>
+                        <font>Font_Reg30</font>
                         <textcolor>grey</textcolor>
                     </control>
                     <control type="label">
@@ -768,7 +765,7 @@
                         <width>750</width>
                         <height>44</height>
                         <label>$INFO[VideoPlayer.Time,, / ]$INFO[VideoPlayer.TimeRemaining,- ]</label>
-                        <font>Font_Reg32</font>
+                        <font>Font_Reg30</font>
                         <visible>Skin.HasSetting(PreferRemaining)</visible>
                     </control>
                     <control type="label">
@@ -777,7 +774,7 @@
                         <width>750</width>
                         <height>44</height>
                         <label fallback="31006">$INFO[VideoPlayer.NextTitle] ($INFO[VideoPlayer.NextStartTime,, - ]$INFO[VideoPlayer.NextEndTime])</label>
-                        <font>Font_Reg32</font>
+                        <font>Font_Reg30</font>
                     </control>
                     <control type="textbox">
                         <posx>4</posx>
@@ -785,7 +782,7 @@
                         <width>1320</width>
                         <height>350</height>
                         <label fallback="31006">$INFO[VideoPlayer.Plot]</label>
-                        <font>Font_Reg21</font>
+                        <font>Font_Reg35</font>
                         <pagecontrol>60</pagecontrol>
                         <autoscroll delay="15000" time="AutoScrollTime" repeat="10000">Skin.HasSetting(AutoScroll) + !Control.HasFocus(60)</autoscroll>
                         <visible>!Control.IsVisible(50)</visible>
@@ -797,7 +794,7 @@
                         <posy>15</posy>
                         <width>1320</width>
                         <label>$LOCALIZE[19031]: $INFO[VideoPlayer.NextTitle]</label>
-                        <font>Font_Reg38_Caps</font>
+                        <font>Font_Reg57_Caps</font>
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
@@ -805,7 +802,7 @@
                         <width>1000</width>
                         <height>85</height>
                         <label fallback="31006">$INFO[VideoPlayer.NextGenre]</label>
-                        <font>Font_Reg20_Caps</font>
+                        <font>Font_Reg34_Caps</font>
                         <textcolor>grey</textcolor>
                     </control>
                     <control type="label">
@@ -814,7 +811,7 @@
                         <width>750</width>
                         <height>44</height>
                         <label>$INFO[VideoPlayer.NextStartTime,, - ]$INFO[VideoPlayer.NextEndTime]</label>
-                        <font>Font_Reg32</font>
+                        <font>Font_Reg30</font>
                     </control>
                     <control type="textbox">
                         <posx>4</posx>
@@ -822,7 +819,7 @@
                         <width>1320</width>
                         <height>350</height>
                         <label fallback="31006">$INFO[VideoPlayer.NextPlot]</label>
-                        <font>Font_Reg21</font>
+                        <font>Font_Reg35</font>
                         <pagecontrol>60</pagecontrol>
                         <autoscroll delay="15000" time="AutoScrollTime" repeat="10000">Skin.HasSetting(AutoScroll) + !Control.HasFocus(60)</autoscroll>
                         <visible>!Control.IsVisible(50)</visible>
@@ -832,7 +829,7 @@
                     <posy>62</posy>
                     <width>1050</width>
                     <label>$INFO[VideoPlayer.ChannelName]</label>
-                    <font>Font_Reg22</font>
+                    <font>Font_Reg38</font>
                     <textcolor>$VAR[FontColorVar]</textcolor>
                 </control>
                 <control type="label">
@@ -841,7 +838,7 @@
                     <width>165</width>
                     <height>44</height>
                     <label>$LOCALIZE[555]:</label>
-                    <font>Font_Reg32</font>
+                    <font>Font_Reg30</font>
                     <textcolor>grey</textcolor>
                 </control>
                 <control type="togglebutton" id="9000">
@@ -858,7 +855,7 @@
                     <alttexturenofocus>-</alttexturenofocus>
                     <label>$LOCALIZE[31075]</label>
                     <altlabel>$LOCALIZE[31075]</altlabel>
-                    <font>Font_Reg12</font>
+                    <font>Font_Reg22</font>
                     <textcolor>grey</textcolor>
                     <onleft>StepBack</onleft>
                     <onright>StepForward</onright>

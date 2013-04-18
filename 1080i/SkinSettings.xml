@@ -34,7 +34,7 @@
                         <width>306</width>
                         <height>74</height>
                         <label>$INFO[ListItem.Label]</label>
-                        <font>Font_Bold20_Caps</font>
+                        <font>Font_Bold34_Caps</font>
                         <textcolor>grey2</textcolor>
                     </control>
                 </itemlayout>
@@ -51,7 +51,7 @@
                         <width>306</width>
                         <height>74</height>
                         <label>$INFO[ListItem.Label]</label>
-                        <font>Font_Bold20_Caps</font>
+                        <font>Font_Bold34_Caps</font>
                     </control>
                 </focusedlayout>
                 <content>
@@ -134,10 +134,12 @@
                         <onclick condition="Skin.HasSetting(kioskmode)">Skin.Reset(kioskmode)</onclick>
                     </control>
                     <control type="radiobutton" id="262">
-                        <label>31269</label>
+                        <label>31268</label>
                         <include>Default_SettingRadioButton</include>
-                        <onclick>Skin.ToggleSetting(effect_bg)</onclick>
-                        <selected>Skin.HasSetting(effect_bg)</selected>
+                        <onclick>Skin.ToggleSetting(backendmode)</onclick>
+                        <onclick>RunScript(script.extendedinfo,backend=true)</onclick>
+                        <selected>Skin.HasSetting(backendmode)</selected>
+                        <visible>System.HasAddon(script.extendedinfo)</visible>
                     </control>
                     <control type="radiobutton" id="107">
                         <label>21398</label>
@@ -230,7 +232,7 @@
                     <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
                     <texturenofocus>settings/settings_radiobuttonoff.png</texturenofocus>
                     <label>31869</label>
-                    <font>Font_Reg20_Caps</font>
+                    <font>Font_Reg34_Caps</font>
                     <textcolor>grey2</textcolor>
                     <onup>9009</onup>
                     <ondown>9004</ondown>
@@ -391,20 +393,6 @@
                         <onclick>Addon.OpenSettings(plugin.image.mypicsdb)</onclick>
                         <visible>System.HasAddon(plugin.image.mypicsdb)</visible>
                     </control>
-                    <control type="button" id="415">
-                        <label>script.extendedinfo</label>
-                        <label2>[COLOR red]$LOCALIZE[106][/COLOR]</label2>
-                        <include>Default_SettingRadioButtonShort</include>
-                        <onclick>Notification($LOCALIZE[31902],$LOCALIZE[31871])</onclick>
-                        <visible>!System.HasAddon(script.extendedinfo)</visible>
-                    </control>
-                    <control type="button" id="416">
-                        <label>script.extendedinfo</label>
-                        <label2>[COLOR green]$LOCALIZE[107][/COLOR]</label2>
-                        <include>Default_SettingRadioButtonShort</include>
-                        <onclick>Addon.OpenSettings(script.extendedinfo)</onclick>
-                        <visible>System.HasAddon(script.extendedinfo)</visible>
-                    </control>
                     <control type="button" id="417">
                         <label>script.cinema.experience</label>
                         <label2>[COLOR red]$LOCALIZE[106][/COLOR]</label2>
@@ -461,20 +449,6 @@
                         <onclick>Addon.OpenSettings(script.artwork.downloader)</onclick>
                         <visible>System.HasAddon(script.artwork.downloader)</visible>
                     </control>
-                    <control type="button" id="436">
-                        <label>script.rssclient</label>
-                        <label2>[COLOR red]$LOCALIZE[106][/COLOR]</label2>
-                        <include>Default_SettingRadioButtonShort</include>
-                        <onclick>noop</onclick>
-                        <visible>!System.HasAddon(script.rssclient)</visible>
-                    </control>
-                    <control type="button" id="437">
-                        <label>script.rssclient</label>
-                        <label2>[COLOR green]$LOCALIZE[107][/COLOR]</label2>
-                        <include>Default_SettingRadioButtonShort</include>
-                        <onclick>Addon.OpenSettings(script.rssclient)</onclick>
-                        <visible>System.HasAddon(script.rssclient)</visible>
-                    </control>
                 </control>
                 <control type="grouplist" id="9005">
                     <posx>387</posx>
@@ -503,7 +477,7 @@
                         <textoffsetx>70</textoffsetx>
                         <aligny>bottom</aligny>
                         <label>by BigNoid &amp; Phil65</label>
-                        <font>Font_Reg15</font>
+                        <font>Font_Reg26</font>
                         <textcolor>grey2</textcolor>
                     </control>
                     <control type="label">

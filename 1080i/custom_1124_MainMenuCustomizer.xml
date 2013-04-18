@@ -190,17 +190,17 @@
                     <width min="15" max="1920">auto</width>
                     <height>36</height>
                     <label>$LOCALIZE[31176]</label>
-                    <font>Font_Info_Caps</font>
+                    <font>Font_Reg28_Caps</font>
                     <textcolor>grey</textcolor>
                 </control>
             </control>
         </control>
-            <control type="group">
-                <posy>472</posy>
-                <include>LibraryStats</include>
-                <include>TimePanel</include>
-                <include>AlternateTimeAndStats</include>
-            </control>
+        <control type="group">
+            <posy>472</posy>
+            <include>LibraryStats</include>
+            <include>TimePanel</include>
+            <include>AlternateTimeAndStats</include>
+        </control>
         <control type="group">
             <include>Animation_OpenCloseZoom</include>
             <include>RecentWidget_1124</include>

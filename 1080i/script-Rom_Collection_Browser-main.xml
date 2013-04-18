@@ -67,7 +67,6 @@
                     <height>750</height>
                     <texture>views/fanart_layout.png</texture>
                 </control>
-                <include condition="Skin.HasSetting(effect_bg)">BG_Effect_Showcase_Panel</include>
                 <control type="label">
                     <posx>150</posx>
                     <posy>12</posy>
@@ -75,7 +74,7 @@
                     <height>42</height>
                     <align>center</align>
                     <label>$INFO[ListItem.Tagline]</label>
-                    <font>Font_Reg15</font>
+                    <font>Font_Reg26</font>
                     <textcolor>white3</textcolor>
                     <scroll>true</scroll>
                     <visible>Container.Content(movies)</visible>
@@ -323,7 +322,6 @@
                 <texture>wall/wall_bg_reflection.png</texture>
                 <animation effect="zoom" start="112,68,1695,1038" end="38,68,1845,1038" time="0" reversible="false" condition="Control.IsVisible(52)">Conditional</animation>
             </control>
-            <include condition="Skin.HasSetting(effect_bg)">BG_Effect_Wall_Panel</include>
         </control>
         <!-- gamelist groups -->
         <control type="group" id="200">
@@ -420,7 +418,7 @@
             </control>
             <control type="group">
                 <visible>Control.IsVisible(51)</visible>
-                    <camera x="960" y="810" />
+                <camera x="960" y="810" />
                 <include>Animation_OpenCloseZoom_New</include>
                 <control type="group" id="7007">
                     <posy>580</posy>
@@ -1201,7 +1199,7 @@
                         <width>570</width>
                         <height>20</height>
                         <label>$INFO[ListItem.Label]</label>
-                        <font>Font_Bold25_Caps</font>
+                        <font>Font_Bold42_Caps</font>
                         <scroll>true</scroll>
                     </control>
                     <control type="image">
@@ -1229,8 +1227,8 @@
                                 <height>20</height>
                                 <align>right</align>
                                 <label>$INFO[ListItem.Property(year)]$INFO[ListItem.Property(maxplayers), • , Players]$INFO[ListItem.Property(rating), • ]$INFO[ListItem.Property(votes),(,)]</label>
-                                <font>Font_Reg19</font>
-                                <textcolor>$VAR[FlagDiffuseVar]</textcolor>
+                                <font>Font_Reg30_2</font>
+                                <textcolor>floor</textcolor>
                                 <scroll>true</scroll>
                             </control>
                             <control type="label">
@@ -1240,8 +1238,8 @@
                                 <height>20</height>
                                 <align>right</align>
                                 <label>$INFO[ListItem.Property(publisher)]</label>
-                                <font>Font_Reg19</font>
-                                <textcolor>$VAR[FlagDiffuseVar]</textcolor>
+                                <font>Font_Reg30_2</font>
+                                <textcolor>floor</textcolor>
                             </control>
                         </control>
                         <control type="textbox">
@@ -1250,7 +1248,7 @@
                             <width>570</width>
                             <height>350</height>
                             <label fallback="31006">$INFO[ListItem.Property(plot)]</label>
-                            <font>Font_Reg19</font>
+                            <font>Font_Reg30_2</font>
                             <textcolor>white6</textcolor>
                             <autoscroll delay="8000" time="AutoScrollTime" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
                         </control>
@@ -1286,7 +1284,7 @@
                 </control>
             </control>
             <control type="group">
-                    <camera x="960" y="810" />
+                <camera x="960" y="810" />
                 <visible>Control.IsVisible(53)</visible>
                 <include>Animation_OpenCloseZoom_New</include>
                 <control type="group" id="6001">
@@ -2130,7 +2128,7 @@
                         <posy>1005</posy>
                         <width>1245</width>
                         <label>$INFO[ListItem.Property(genre)]</label>
-                        <font>Font_Info_Caps</font>
+                        <font>Font_Reg28_Caps</font>
                         <shadowcolor>floorshadow</shadowcolor>
                         <textcolor>floor</textcolor>
                     </control>
@@ -2202,7 +2200,7 @@
                                 <width>800</width>
                                 <height>48</height>
                                 <label>$INFO[ListItem.Label]</label>
-                                <font>Font_Reg22</font>
+                                <font>Font_Reg38</font>
                                 <textcolor>grey2</textcolor>
                             </control>
                             <control type="label">
@@ -2255,7 +2253,7 @@
                                 <width>800</width>
                                 <height>48</height>
                                 <label>$INFO[ListItem.Label]</label>
-                                <font>Font_Reg22</font>
+                                <font>Font_Reg38</font>
                             </control>
                             <control type="label">
                                 <posx>60</posx>
@@ -2293,7 +2291,7 @@
                                 <posx>68</posx>
                                 <width>810</width>
                                 <height>60</height>
-                                <font>Font_Reg19</font>
+                                <font>Font_Reg30_2</font>
                                 <textcolor>grey2</textcolor>
                                 <info>ListItem.Label</info>
                             </control>
@@ -2303,7 +2301,7 @@
                                 <height>60</height>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Property(year)]</label>
-                                <font>Font_Reg19</font>
+                                <font>Font_Reg30_2</font>
                                 <textcolor>grey2</textcolor>
                             </control>
                             <control type="image">
@@ -2333,7 +2331,7 @@
                                 <posx>68</posx>
                                 <width>810</width>
                                 <height>60</height>
-                                <font>Font_Reg19</font>
+                                <font>Font_Reg30_2</font>
                                 <info>ListItem.Label</info>
                             </control>
                             <control type="label">
@@ -2342,7 +2340,7 @@
                                 <height>60</height>
                                 <align>center</align>
                                 <label>$INFO[ListItem.Property(year)]</label>
-                                <font>Font_Reg19</font>
+                                <font>Font_Reg30_2</font>
                             </control>
                             <control type="image">
                                 <posx>1050</posx>
@@ -2413,7 +2411,7 @@
                     <width>900</width>
                     <align>center</align>
                     <label>$INFO[ListItem.Property(genre)]</label>
-                    <font>Font_Info_Caps</font>
+                    <font>Font_Reg28_Caps</font>
                     <shadowcolor>floorshadow</shadowcolor>
                     <textcolor>floor</textcolor>
                     <visible>Control.IsVisible(51) | Control.IsVisible(53)</visible>
@@ -2545,7 +2543,7 @@
                         <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
                         <texturenofocus>button-nofocus.png</texturenofocus>
                         <label>$ADDON[script.games.rom.collection.browser 50004]</label>
-                        <font>Font_Reg18</font>
+                        <font>Font_Reg29</font>
                         <textcolor>white2</textcolor>
                         <colordiffuse>$VAR[FocusTextureColorVar]</colordiffuse>
                         <focusedcolor>white2</focusedcolor>
@@ -2642,7 +2640,7 @@
                                     <height>45</height>
                                     <align>left</align>
                                     <aligny>center</aligny>
-                                    <font>Font_Reg18</font>
+                                    <font>Font_Reg29</font>
                                     <textcolor>white2</textcolor>
                                     <selectedcolor>$VAR[ColorDiffuseVar]</selectedcolor>
                                     <info>ListItem.Label</info>
@@ -2674,7 +2672,7 @@
                                     <height>45</height>
                                     <align>left</align>
                                     <aligny>center</aligny>
-                                    <font>Font_Reg18</font>
+                                    <font>Font_Reg29</font>
                                     <textcolor>white2</textcolor>
                                     <selectedcolor>$VAR[ColorDiffuseVar]</selectedcolor>
                                     <info>ListItem.Label</info>
@@ -2719,7 +2717,7 @@
                                     <height>45</height>
                                     <align>left</align>
                                     <aligny>center</aligny>
-                                    <font>Font_Reg18</font>
+                                    <font>Font_Reg29</font>
                                     <textcolor>white2</textcolor>
                                     <selectedcolor>$VAR[ColorDiffuseVar]</selectedcolor>
                                     <info>ListItem.Label</info>
@@ -2751,7 +2749,7 @@
                                     <height>45</height>
                                     <align>left</align>
                                     <aligny>center</aligny>
-                                    <font>Font_Reg18</font>
+                                    <font>Font_Reg29</font>
                                     <textcolor>white2</textcolor>
                                     <selectedcolor>$VAR[ColorDiffuseVar]</selectedcolor>
                                     <info>ListItem.Label</info>
@@ -2796,7 +2794,7 @@
                                     <height>45</height>
                                     <align>left</align>
                                     <aligny>center</aligny>
-                                    <font>Font_Reg18</font>
+                                    <font>Font_Reg29</font>
                                     <textcolor>white2</textcolor>
                                     <selectedcolor>$VAR[ColorDiffuseVar]</selectedcolor>
                                     <info>ListItem.Label</info>
@@ -2828,7 +2826,7 @@
                                     <height>45</height>
                                     <align>left</align>
                                     <aligny>center</aligny>
-                                    <font>Font_Reg18</font>
+                                    <font>Font_Reg29</font>
                                     <textcolor>white2</textcolor>
                                     <selectedcolor>$VAR[ColorDiffuseVar]</selectedcolor>
                                     <info>ListItem.Label</info>
@@ -2873,7 +2871,7 @@
                                     <height>45</height>
                                     <align>left</align>
                                     <aligny>center</aligny>
-                                    <font>Font_Reg18</font>
+                                    <font>Font_Reg29</font>
                                     <textcolor>white2</textcolor>
                                     <selectedcolor>$VAR[ColorDiffuseVar]</selectedcolor>
                                     <info>ListItem.Label</info>
@@ -2905,7 +2903,7 @@
                                     <height>45</height>
                                     <align>left</align>
                                     <aligny>center</aligny>
-                                    <font>Font_Reg18</font>
+                                    <font>Font_Reg29</font>
                                     <textcolor>white2</textcolor>
                                     <selectedcolor>$VAR[ColorDiffuseVar]</selectedcolor>
                                     <info>ListItem.Label</info>
@@ -2950,7 +2948,7 @@
                                     <height>45</height>
                                     <align>left</align>
                                     <aligny>center</aligny>
-                                    <font>Font_Reg18</font>
+                                    <font>Font_Reg29</font>
                                     <textcolor>white2</textcolor>
                                     <selectedcolor>$VAR[ColorDiffuseVar]</selectedcolor>
                                     <info>ListItem.Label</info>
@@ -2982,7 +2980,7 @@
                                     <height>45</height>
                                     <align>left</align>
                                     <aligny>center</aligny>
-                                    <font>Font_Reg18</font>
+                                    <font>Font_Reg29</font>
                                     <textcolor>white2</textcolor>
                                     <selectedcolor>$VAR[ColorDiffuseVar]</selectedcolor>
                                     <info>ListItem.Label</info>

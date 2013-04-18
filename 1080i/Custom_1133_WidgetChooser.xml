@@ -49,7 +49,7 @@
                             <height>60</height>
                             <textoffsetx>10</textoffsetx>
                             <label>$INFO[ListItem.Label]</label>
-                            <font>Font_Reg19</font>
+                            <font>Font_Reg30_2</font>
                             <textcolor>grey2</textcolor>
                         </control>
                     </itemlayout>
@@ -67,7 +67,7 @@
                                 <height>60</height>
                                 <textoffsetx>10</textoffsetx>
                                 <label>$INFO[ListItem.Label]</label>
-                                <font>Font_Reg19</font>
+                                <font>Font_Reg30_2</font>
                                 <scroll>true</scroll>
                             </control>
                         </control>
@@ -83,7 +83,7 @@
                                 <width>400</width>
                                 <textoffsetx>10</textoffsetx>
                                 <label>$INFO[ListItem.Label]</label>
-                                <font>Font_Reg19</font>
+                                <font>Font_Reg30_2</font>
                                 <textcolor>grey2</textcolor>
                             </control>
                         </control>
@@ -270,7 +270,7 @@
                         <item>
                             <label>31815</label>
                             <onclick>RunScript(plugin.image.mypicsdb,0,?action='setproperties'&amp;method='Latest'&amp;sort='Added'&amp;limit=10)</onclick>
-                            <onclick>SetProperty(CustomYesNoDialog,recentpics,1124)</onclick>
+                            <onclick>SetProperty(CustomYesNoDialog,recentpicsimages,1124)</onclick>
                             <onclick>Skin.SetString(ItemToEdit.$INFO[Window(1124).Property(WidgetSelection)]Title,$LOCALIZE[31815])</onclick>
                             <onclick>ActivateWindow(1137)</onclick>
                             <visible>System.HasAddon(plugin.image.mypicsdb)</visible>
@@ -278,7 +278,7 @@
                         <item>
                             <label>31816</label>
                             <onclick>RunScript(plugin.image.mypicsdb,0,?action='setproperties'&amp;method='Random'&amp;sort='Added'&amp;limit=10)</onclick>
-                            <onclick>SetProperty(CustomYesNoDialog,randompics,1124)</onclick>
+                            <onclick>SetProperty(CustomYesNoDialog,randompicsimages,1124)</onclick>
                             <onclick>Skin.SetString(ItemToEdit.$INFO[Window(1124).Property(WidgetSelection)]Title,$LOCALIZE[31816])</onclick>
                             <onclick>ActivateWindow(1137)</onclick>
                             <visible>System.HasAddon(plugin.image.mypicsdb)</visible>
@@ -293,15 +293,31 @@
                         </item>
                         <item>
                             <label>31820</label>
-                            <onclick>SetProperty(CustomYesNoDialog,babespanelcoversquare,1124)</onclick>
+                            <onclick>SetProperty(CustomYesNoDialog,babesimagespanelcoversquare,1124)</onclick>
                             <onclick>Skin.SetString(ItemToEdit.$INFO[Window(1124).Property(WidgetSelection)]Title,$LOCALIZE[31820])</onclick>
                             <onclick>ActivateWindow(1146)</onclick>
                         </item>
                         <item>
                             <label>$INFO[Window(home).Property(bigpictures.scraper.title)]</label>
-                            <onclick>SetProperty(CustomYesNoDialog,thebigpicture,1124)</onclick>
+                            <onclick>SetProperty(CustomYesNoDialog,thebigpictureimages,1124)</onclick>
                             <onclick>Skin.SetString(ItemToEdit.$INFO[Window(1124).Property(WidgetSelection)]Title,The Big Picture)</onclick>
                             <onclick>ActivateWindow(1137)</onclick>
+                        </item>
+                        <item>
+                            <label>XKCD</label>
+                            <onclick>SetProperty(CustomYesNoDialog,xkcdimages,1124)</onclick>
+                            <onclick>Skin.SetString(ItemToEdit.$INFO[Window(1124).Property(WidgetSelection)]Title,XKCD)</onclick>
+                            <onclick>RunScript(script.extendedinfo,info=xkcd)</onclick>
+                            <onclick>ActivateWindow(1137)</onclick>
+                            <visible>System.HasAddon(script.extendedinfo)</visible>
+                        </item>
+                        <item>
+                            <label>Cyanide &amp; Happiness</label>
+                            <onclick>SetProperty(CustomYesNoDialog,cyanideimages,1124)</onclick>
+                            <onclick>Skin.SetString(ItemToEdit.$INFO[Window(1124).Property(WidgetSelection)]Title,Cyanide &amp; Happiness)</onclick>
+                            <onclick>RunScript(script.extendedinfo,info=cyanide)</onclick>
+                            <onclick>ActivateWindow(1137)</onclick>
+                            <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item>
                             <label>31199</label>
@@ -313,7 +329,7 @@
                             <label>$LOCALIZE[20304]</label>
                             <onclick>Dialog.Close(1133)</onclick>
                             <onclick>ActivateWindow(1162)</onclick>
-                            <visible>System.HasAddon(script.rssclient)</visible>
+                            <visible>System.HasAddon(script.extendedinfo)</visible>
                         </item>
                         <item>
                             <label>31327</label>

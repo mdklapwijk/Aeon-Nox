@@ -10,7 +10,6 @@
     <include>Animation_DialogZoom</include>
     <onunload condition="Substring(Skin.String(widgetlist),favourite) | Substring(Skin.String(widget2list),favourite)">AlarmClock(FavouriteUpdate,RunScript(script.favourites),00:01,silent)</onunload>
     <controls>
-        <include condition="Skin.HasSetting(effect_bg)">BG_Effect_Home</include>
         <control type="image" id="999">
             <width>462</width>
             <height>1080</height>
@@ -28,7 +27,7 @@
                 <texturefocus>dialogs/context_highlight.png</texturefocus>
                 <texturenofocus>dialogs/context_nofocus.png</texturenofocus>
                 <label>$VAR[ContextMenuLabel2001]</label>
-                <font>Font_Reg19</font>
+                <font>Font_Reg30_2</font>
                 <textcolor>context</textcolor>
                 <focusedcolor>white2</focusedcolor>
                 <colordiffuse>$VAR[SpotColorVar2]</colordiffuse>
@@ -44,7 +43,7 @@
                 <texturefocus>dialogs/context_highlight.png</texturefocus>
                 <texturenofocus>dialogs/context_nofocus.png</texturenofocus>
                 <label>31030</label>
-                <font>Font_Reg19</font>
+                <font>Font_Reg30_2</font>
                 <textcolor>context</textcolor>
                 <focusedcolor>white2</focusedcolor>
                 <colordiffuse>$VAR[SpotColorVar2]</colordiffuse>
@@ -52,7 +51,7 @@
                 <visible>System.HasAddon(script.libraryeditor) + !IsEmpty(ListItem.DBID) + !SubString(ListItem.Path,videodb://1/7)</visible>
                 <visible>Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs)</visible>
             </control>
-<!--            <control type="button" id="2067">
+            <!--            <control type="button" id="2067">
                 <width>462</width>
                 <height>58</height>
                 <textoffsety>12</textoffsety>
@@ -60,7 +59,7 @@
                 <texturefocus>dialogs/context_highlight.png</texturefocus>
                 <texturenofocus>dialogs/context_nofocus.png</texturenofocus>
                 <label>Delete</label>
-                <font>Font_Reg19</font>
+                <font>Font_Reg30_2</font>
                 <textcolor>context</textcolor>
                 <focusedcolor>white2</focusedcolor>
                 <colordiffuse>$VAR[SpotColorVar2]</colordiffuse>
@@ -76,12 +75,12 @@
                 <texturefocus>dialogs/context_highlight.png</texturefocus>
                 <texturenofocus>dialogs/context_nofocus.png</texturenofocus>
                 <label>$LOCALIZE[31096]</label>
-                <font>Font_Reg19</font>
+                <font>Font_Reg30_2</font>
                 <textcolor>context</textcolor>
                 <focusedcolor>white2</focusedcolor>
                 <colordiffuse>$VAR[SpotColorVar2]</colordiffuse>
                 <visible>Container.Content(artists) | Container.Content(actors) | Container.Content(directors)</visible>
-                <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[ListItem.Label],return)</onclick>
+                <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$ESCINFO[ListItem.Label],return)</onclick>
             </control>
             <control type="button" id="2009">
                 <width>462</width>
@@ -91,12 +90,12 @@
                 <texturefocus>dialogs/context_highlight.png</texturefocus>
                 <texturenofocus>dialogs/context_nofocus.png</texturenofocus>
                 <label>$LOCALIZE[31096]</label>
-                <font>Font_Reg19</font>
+                <font>Font_Reg30_2</font>
                 <textcolor>context</textcolor>
                 <focusedcolor>white2</focusedcolor>
                 <colordiffuse>$VAR[SpotColorVar2]</colordiffuse>
                 <visible>Container.Content(albums) | Container.Content(songs)</visible>
-                <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$INFO[ListItem.Artist] $INFO[ListItem.Label],return)</onclick>
+                <onclick>ActivateWindow(videos,plugin://plugin.video.youtube/?path=/root/search&amp;feed=search&amp;search=$ESCINFO[ListItem.Artist] $INFO[ListItem.Label],return)</onclick>
             </control>
             <control type="button" id="2011">
                 <width>462</width>
@@ -106,7 +105,7 @@
                 <texturefocus>dialogs/context_highlight.png</texturefocus>
                 <texturenofocus>dialogs/context_nofocus.png</texturenofocus>
                 <label>31033</label>
-                <font>Font_Reg19</font>
+                <font>Font_Reg30_2</font>
                 <textcolor>context</textcolor>
                 <focusedcolor>white2</focusedcolor>
                 <colordiffuse>$VAR[SpotColorVar2]</colordiffuse>
@@ -124,7 +123,7 @@
                 <texturefocus>dialogs/context_highlight.png</texturefocus>
                 <texturenofocus>dialogs/context_nofocus.png</texturenofocus>
                 <label>31620</label>
-                <font>Font_Reg19</font>
+                <font>Font_Reg30_2</font>
                 <textcolor>context</textcolor>
                 <focusedcolor>white2</focusedcolor>
                 <colordiffuse>$VAR[SpotColorVar2]</colordiffuse>
@@ -146,7 +145,7 @@
                 <texturefocus>dialogs/context_highlight.png</texturefocus>
                 <texturenofocus>dialogs/context_nofocus.png</texturenofocus>
                 <label>$VAR[ContextMenuTrailerButtonLabelVar]</label>
-                <font>Font_Reg19</font>
+                <font>Font_Reg30_2</font>
                 <textcolor>context</textcolor>
                 <focusedcolor>white2</focusedcolor>
                 <colordiffuse>$VAR[SpotColorVar2]</colordiffuse>
@@ -164,7 +163,7 @@
                 <texturefocus>dialogs/context_highlight.png</texturefocus>
                 <texturenofocus>dialogs/context_nofocus.png</texturenofocus>
                 <label>518</label>
-                <font>Font_Reg19</font>
+                <font>Font_Reg30_2</font>
                 <textcolor>context</textcolor>
                 <focusedcolor>white2</focusedcolor>
                 <colordiffuse>$VAR[SpotColorVar2]</colordiffuse>
@@ -195,7 +194,7 @@
             <aligny>top</aligny>
             <texturefocus>dialogs/context_highlight.png</texturefocus>
             <texturenofocus>dialogs/context_nofocus.png</texturenofocus>
-            <font>Font_Reg19</font>
+            <font>Font_Reg30_2</font>
             <textcolor>context</textcolor>
             <focusedcolor>white2</focusedcolor>
             <colordiffuse>$VAR[SpotColorVar2]</colordiffuse>

@@ -222,6 +222,7 @@
             <onclick condition="Control.IsVisible(550)">SetProperty(actualViewtype,Panel,home)</onclick>
             <onclick condition="Container.Content(episodes)">SetProperty(Area,Episodes,home)</onclick>
             <onclick condition="Container.Content(movies)">SetProperty(Area,Movies,home)</onclick>
+            <onclick condition="Container.Content(sets)">SetProperty(Area,Sets,home)</onclick>
             <onclick condition="Container.Content(TVShows)">SetProperty(Area,TVShows,home)</onclick>
             <onclick condition="Container.Content(seasons)">SetProperty(Area,Seasons,home)</onclick>
             <onclick condition="Container.Content(musicvideos)">SetProperty(Area,MusicVideos,home)</onclick>
@@ -628,23 +629,22 @@
         </control>
     </include>
     <include name="FilterButtons">
-                    <control type="edit" id="19">
-                    <label>587</label>
-                    <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
-                    <hinttext></hinttext>
-                    <visible>!Container.Content()</visible>
-                    <include>Objects_MediaMenuButtonIcons</include>
-                </control>
-                <control type="radiobutton" id="20">
-                    <label>587</label>
-                    <visible>Container.CanFilterAdvanced</visible>
-                    <selected>Container.Filtered</selected>
-                    <onclick>SetFocus(50)</onclick>
-                    <onclick>Filter</onclick>
-                    <include>Objects_MediaMenuButtonIcons</include>
-                    <visible>!Container.Content()</visible>
-                </control>
-    
+        <control type="edit" id="19">
+            <label>587</label>
+            <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
+            <hinttext></hinttext>
+            <visible>!Container.Content()</visible>
+            <include>Objects_MediaMenuButtonIcons</include>
+        </control>
+        <control type="radiobutton" id="20">
+            <label>587</label>
+            <visible>Container.CanFilterAdvanced</visible>
+            <selected>Container.Filtered</selected>
+            <onclick>SetFocus(50)</onclick>
+            <onclick>Filter</onclick>
+            <include>Objects_MediaMenuButtonIcons</include>
+            <visible>!Container.Content()</visible>
+        </control>
     </include>
     <include name="MediaMenuIcons">
         <posx>10</posx>
@@ -663,7 +663,7 @@
             <texturefocus border="8">views/tripanel/listselect_fo.png</texturefocus>
             <texturenofocus border="3">settings/listselect_nf.png</texturenofocus>
             <label>$LOCALIZE[31633]</label>
-            <font>Font_Reg15_Caps</font>
+            <font>Font_Reg26_Caps</font>
             <textcolor>$VAR[SubTitleColorVar]</textcolor>
             <disabledcolor>$VAR[FontColorVar]</disabledcolor>
             <enable>false</enable>

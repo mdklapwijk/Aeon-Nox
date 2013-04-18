@@ -21,7 +21,6 @@
     <onunload>ClearProperty(Method,home)</onunload>
     <controls>
         <include>DialogBackFade</include>
-        <include condition="Skin.HasSetting(effect_bg)">BG_Effect_Home</include>
         <control type="image">
             <posx>357</posx>
             <posy>180</posy>
@@ -53,7 +52,7 @@
             <width>600</width>
             <height>60</height>
             <label>$LOCALIZE[20012]</label>
-            <font>Font_Bold19</font>
+            <font>Font_Bold33</font>
             <textcolor>$VAR[TitleColorVar]</textcolor>
             <visible>!Stringcompare(Window(home).Property(Type),Music)</visible>
         </control>
@@ -63,7 +62,7 @@
             <width>600</width>
             <height>60</height>
             <label>$LOCALIZE[20011]</label>
-            <font>Font_Bold19</font>
+            <font>Font_Bold33</font>
             <textcolor>$VAR[TitleColorVar]</textcolor>
             <visible>Stringcompare(Window(home).Property(Type),Music)</visible>
         </control>
@@ -88,7 +87,7 @@
                     <posx>45</posx>
                     <width>1082</width>
                     <height>60</height>
-                    <font>Font_Reg19</font>
+                    <font>Font_Reg30_2</font>
                     <textcolor>grey</textcolor>
                     <info>ListItem.Label</info>
                 </control>
@@ -104,7 +103,7 @@
                     <posx>45</posx>
                     <width>1082</width>
                     <height>60</height>
-                    <font>Font_Reg19</font>
+                    <font>Font_Reg30_2</font>
                     <info>ListItem.Label</info>
                 </control>
             </focusedlayout>
